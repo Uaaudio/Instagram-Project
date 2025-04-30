@@ -17,8 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from login.views import login_page
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('',login_page), #link da pagina de login. (funcionando)
 ]
